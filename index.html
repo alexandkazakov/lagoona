@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-right">
+      <div class="header-right flex">
         <a href="#" class="logo-link">
           <img src="./img/logo.png" class="logo-image" alt="Логотип Lagoona">
         </a>
@@ -19,8 +19,8 @@
         <a href="#" class="header-autorize">Личный кабинет</a>
       </div>
 
-      <nav class="main-nav">
-        <ul class="main-nav-list">
+      <nav class="main-nav flex">
+        <ul class="main-nav-list flex">
           <li class="main-nav-item"><a href="#about" class="main-nav-item-link">О нас</a></li>
           <li class="main-nav-item"><a href="#services" class="main-nav-item-link">Услуги</a></li>
           <li class="main-nav-item"><a href="#benefits" class="main-nav-item-link">Преимущества</a></li>
@@ -28,7 +28,7 @@
           <li class="main-nav-item"><a href="#blog" class="main-nav-item-link">Блог</a></li>
           <li class="main-nav-item"><a href="#contacts" class="main-nav-item-link">Контакты</a></li>
         </ul>
-        <div class="main-nav-btns">
+        <div class="main-nav-btns flex">
           <button class="main-nav-btn feedback">Хочу тур</button>
           <button class="main-nav-btn call-back">Обратный звонок</button>
         </div>
@@ -41,7 +41,7 @@
 
       <section id="offers" class="sections offers">
         <h2 class="section-title offers-title">Спецпредложения</h2>
-        <ul class="offers-list">
+        <ul class="offers-list flex">
           <li class="offers-item offers-item-1">
             <h3 class="offers-item-title">Мальдивские острова</h3>
             <p class="offers-item-cost">от 55 000</p>
@@ -64,13 +64,13 @@
         <h2 class="section-title about-title">О нас</h2>
         <p class="about-text">
           Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых
-и&nbsp;административных условий.
+          и&nbsp;административных условий.
         </p>
       </section>
 
       <section id="services" class="sections services">
         <h2 class="section-title services-title">Услуги</h2>
-        <ul class="services-list">
+        <ul class="services-list flex">
           <li class="services-item services-item-1">
             <h3 class="services-item-title">
               <a href="#" class="services-item-title-link">Эксклюзивное обслуживание</a>
@@ -108,54 +108,62 @@
 
       <section id="benefits" class="sections benefits">
         <h2 class="section-title benefits-title">Преимущества</h2>
-        <ul class="benefits-list">
+        <ul class="benefits-list flex">
           <li class="benefits-items">
-            <img src="./img/benefits-item-1.jpg" class="benefits-item-image" alt="Иконка ванны">
-            <div class="benefits-item-desc">
-              Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
+            <div class="benefits-items-wrapper benefits-wrapper-1">
+              <p class="benefits-item-desc">
+                Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
+              </p>
             </div>
           </li>
           <li class="benefits-items">
-            <img src="./img/benefits-item-2.jpg" class="benefits-item-image" alt="Иконка вешалки с полотенцем">
-            <p class="benefits-item-desc">
-              Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
-            </p>
+            <div class="benefits-items-wrapper benefits-wrapper-2">
+              <p class="benefits-item-desc">
+                Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
+              </p>
+            </div>
           </li>
           <li class="benefits-items">
-            <img src="./img/benefits-item-3.jpg" class="benefits-item-image" alt="Иконка батареи">
-            <p class="benefits-item-desc">
-              Таким образом реализация плановых заданий играет важную роль для понимания
-            </p>
+            <div class="benefits-items-wrapper benefits-wrapper-3">
+              <p class="benefits-item-desc">
+                Таким образом реализация плановых заданий играет важную роль для понимания
+              </p>
+            </div>
           </li>
           <li class="benefits-items">
-            <img src="./img/benefits-item-4.jpg" class="benefits-item-image" alt="Иконка ключа">
-            <p class="benefits-item-desc">
-              Повседневная практика показывает, что сложившаяся структура организации
-            </p>
+            <div class="benefits-items-wrapper benefits-wrapper-4">
+              <p class="benefits-item-desc">
+                Повседневная практика показывает, что сложившаяся структура организации
+              </p>
+            </div>
           </li>
           <li class="benefits-items">
-            <img src="./img/benefits-item-5.jpg" class="benefits-item-image" alt="Иконка автомобиля и знака парковки">
-            <p class="benefits-item-desc">
-              Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
-            </p>
+            <div class="benefits-items-wrapper benefits-wrapper-5">
+              <p class="benefits-item-desc">
+                Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
+              </p>
+            </div>
           </li>
           <li class="benefits-items">
-            <img src="./img/benefits-item-6.jpg" class="benefits-item-image" alt="Иконка звонка на ресепшене">
-            <p class="benefits-item-desc">
-              Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
-            </p>
+            <div class="benefits-items-wrapper benefits-wrapper-6">
+              <p class="benefits-item-desc">
+                Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
+              </p>
+            </div>
           </li>
           <li class="benefits-items">
-            <img src="./img/benefits-item-7.jpg" class="benefits-item-image" alt="Иконка сейфа">
-            <p class="benefits-item-desc">
-              Повседневная практика показывает, что дальнейшее развитие различных
-            </p>
+            <div class="benefits-items-wrapper benefits-wrapper-7">
+              <p class="benefits-item-desc">
+                Повседневная практика показывает, что дальнейшее развитие различных
+              </p>
+            </div>
           </li>
           <li class="benefits-items">
-            <img src="./img/benefits-item-8.jpg" class="benefits-item-image" alt="Иконка бассейна">
-            <p class="benefits-item-desc">
-              Значимость этого настолько очевидна, что консультация наших экспертов помогает
-            </p>
+            <div class="benefits-items-wrapper benefits-wrapper-8">
+              <p class="benefits-item-desc">
+                Значимость этого настолько очевидна, что консультация наших экспертов помогает
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -163,7 +171,7 @@
       <section class="sections accommodation">
         <div class="container">
           <h2 class="section-title accommodation-title">Размещение</h2>
-          <ul class="accommodation-list">
+          <ul class="accommodation-list flex">
             <li class="accomodation-item">
               <img src="./img/accomodation-1.jpg" alt="Фото отеля с пальмами и бассейном" class="accomodation-item-image">
               <div class="accomodation-item-container">
@@ -292,7 +300,7 @@
                 <button class="main-nav-btn">Номера</button>
               </div>
             </li>
-            <li class="accomodation-item accomodation-more">
+            <li class="accomodation-item accomodation-more flex">
               <a href="#" class="accomodation-item-more-link">Посмотреть все варианты</a>
             </li>
           </ul>
