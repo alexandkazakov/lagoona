@@ -29,8 +29,8 @@
           <li class="main-nav-item"><a href="#contacts" class="main-nav-item-link">Контакты</a></li>
         </ul>
         <div class="main-nav-btns flex">
-          <button class="main-nav-btn feedback">Хочу тур</button>
-          <button class="main-nav-btn call-back">Обратный звонок</button>
+          <button class="btn main-nav-btn feedback">Хочу тур</button>
+          <button class="btn main-nav-btn call-back">Обратный звонок</button>
         </div>
       </nav>
     </div>
@@ -185,7 +185,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona española</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item">
@@ -201,7 +201,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona son típicas</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item">
@@ -217,7 +217,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona de la guerra</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item">
@@ -233,7 +233,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona mentira piadosa</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item">
@@ -249,7 +249,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona empujar la creatividad</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item">
@@ -265,7 +265,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona el retorno</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item">
@@ -281,7 +281,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona mentira piadosa</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item">
@@ -297,7 +297,7 @@
                 </div>
                 <div class="accomodation-item-name">Lagoona suerte siguió siempre</div>
                 <div class="accomodation-item-place">Барселона, Испания</div>
-                <button class="main-nav-btn">Номера</button>
+                <button class="btn">Номера</button>
               </div>
             </li>
             <li class="accomodation-item accomodation-more flex">
@@ -306,7 +306,136 @@
           </ul>
         </div>
       </section>
+
+      <section class="sections want-tour">
+        <h2 class="section-title want-tour-title">Хочу тур</h2>
+        <div class="from-wrapper">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="want-tour-form flex">
+            <ul class="want-tour-list list-reset flex">
+              <li class="want-tour-item flex">
+                <label class="want-tour-label" for="city">Город вылета</label>
+                <select name="city" id="city" class="want-tour-select">
+                  <option value="Санкт-Петербург" class="want-tour-option">Санкт-Петербург</option>
+                  <option value="Москва" class="want-tour-option">Москва</option>
+                  <option value="Нижний Новгород" class="want-tour-option">Нижний Новгород</option>
+                </select>
+              </li>
+              <li class="want-tour-item flex">
+                <label class="want-tour-label" for="country">Страна</label>
+                <select name="country" id="country" class="want-tour-select">
+                  <option value="Австралия">Австралия</option>
+                  <option value="Россия">Россия</option>
+                  <option value="Турция">Турция</option>
+                </select>
+              </li>
+              <li class="want-tour-item flex">
+                <label class="want-tour-label" for="date">Дата прибытия</label>
+                <input class="want-tour-input" type="date" name="date" id="date" value="2021-10-18">
+              </li>
+              <li class="want-tour-item flex">
+                <label class="want-tour-label" for="period">Ночей</label>
+                <input class="want-tour-input" type="number" name="period" id="period" value="6" min="1">
+              </li>
+              <li class="want-tour-item flex">
+                <label class="want-tour-label" for="count">Туристы</label>
+                <input class="want-tour-input" type="number" name="count" id="count" value="2" min="1" required>
+              </li>
+            </ul>
+            <div class="want-tour-right flex">
+              <button type="submit" class="btn want-tour-btn">Найти</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="sections contacts">
+        <h2 class="section-title contacts-title">Контакты</h2>
+        <div class="contacts-block flex">
+          <div class="contacts-left flex">
+            <ul class="contacts-list list-reset">
+              <li class="contacts-item flex">
+                <div class="contacts-item-left">
+                  Адрес
+                </div>
+                <div class="contacts-item-right">
+                  Москва, улица Юности, дом 5 строение 4, офис 2
+                </div>
+              </li>
+              <li class="contacts-item flex">
+                <div class="contacts-item-left">
+                  Телефоны
+                </div>
+                <div class="contacts-item-right">
+                  <a href="tel:+74995356434" class="contacts-link">+7 499 535-64-34</a>
+                  <a href="tel:+74950050544" class="contacts-link">+7 495 005-05-44</a>
+                </div>
+              </li>
+              <li class="contacts-item flex">
+                <div class="contacts-item-left">
+                  Email
+                </div>
+                <div class="contacts-item-right">
+                  <a href="mailto:lg.oona@mail.ru" class="contacts-link">lg.oona@mail.ru</a>
+                  <p class="contacts-email-desc">по вопросам бронирования</p>
+                  <a href="mailto:hotels.ln@mail.ru" class="contacts-link">hotels.ln@mail.ru</a>
+                  <p class="contacts-email-desc">по вопросам сотрудничества</p>
+                </div>
+              </li>
+              <li class="contacts-item flex">
+                <div class="contacts-item-left">
+                  График
+                </div>
+                <div class="contacts-item-right">
+                  Понедельник-пятница, с 10:00 до 19:00
+                </div>
+              </li>
+            </ul>
+            <button class="btn btn-reset contacts-btn">Построить маршрут</button>
+          </div>
+          <div class="contacts-right">
+            <img src="./img/contacts.jpg" alt="Офис Lagoona" class="contacts-right-image">
+          </div>
+        </div>
+      </section>
     </div>
   </main>
+
+  <footer class="footer flex">
+    <div class="footer-wrapper flex">
+      <div class="footer-left">
+        <p class="footer-text footer-left-p">
+          &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+        </p>
+        <p class="footer-text footer-left-p">
+          Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой
+        </p>
+        <a href="#" class="footer-link">Пользовательское соглашение</a>
+      </div>
+      <div class="footer-middle">
+        <p class="footer-text footer-mid-p">
+          11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+        </p>
+        <div class="footer-mid-p">
+          <a href="tel:+74995356434" class="footer-link">+7 499 535-64-34</a>
+          <a href="tel:+74950050544" class="footer-link">+7 495 005-05-44</a>
+        </div>
+        <div class="footer-mid-p">
+          <a href="mailto:lg.oona@mail.ru" class="footer-link">lg.oona@mail.ru</a>
+          <a href="mailto:hotels.ln@mail.ru" class="footer-link">hotels.ln@mail.ru</a>
+        </div>
+      </div>
+    </div>
+    <ul class="social-list list-reset flex">
+      <li class="social-item">
+        <a href="#" class="social-link social-link-tripad"></a>
+      </li>
+      <li class="social-item">
+        <a href="#" class="social-link social-link-ok"></a>
+      </li>
+      <li class="social-item">
+        <a href="#" class="social-link social-link-vk"></a>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>
