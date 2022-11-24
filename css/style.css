@@ -90,9 +90,15 @@ h1, h2, h3, p, ul, li, figure {
   margin: 0 auto;
 }
 
-.header-right {
-  position: relative;
+.header-top {
+  max-width: 100%;
+  min-height: 10px;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 30px;
+}
+
+.header-left {
   align-items: center;
 }
 
@@ -104,23 +110,58 @@ h1, h2, h3, p, ul, li, figure {
 }
 
 .header-tel {
+  display: inline-block;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: #666666;
 }
 
+.header-tel:focus {
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.header-tel:hover {
+  color: #CC9933;
+}
+
+.header-tel:active {
+  outline: none;
+  color: #A47312;
+}
+
 .header-autorize {
-  position: absolute;
-  right: 0;
-  top: 20px;
-  padding-left: 28px;
-  background-image: url('../img/header-autorize.svg');
-  background-position: left center;
-  background-size: 21px 12px;
-  background-repeat:  no-repeat;
   line-height: 16px;
   color: #CC9933;
+}
+
+.header-autorize svg {
+  margin-right: 7px;
+  fill: #CC9933;
+}
+
+.header-autorize:focus {
+  outline: 1px solid #CC9933;
+  outline-offset: 9px;
+}
+
+.header-autorize:hover {
+  color: #F0BF5F;
+}
+
+.header-autorize:hover svg {
+  fill: #F0BF5F;
+}
+
+.header-autorize:active {
+  color: #A47312;
+  outline: none;
+}
+
+.header-autorize:active svg {
+  fill: #A47312;
 }
 
 .main-nav {
@@ -148,6 +189,21 @@ h1, h2, h3, p, ul, li, figure {
   margin-right: 45px;
 }
 
+.main-nav-item-link:focus {
+  color: #CC9933;
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+}
+
+.main-nav-item-link:hover {
+  color: #CC9933;
+}
+
+.main-nav-item-link:active {
+  color: #A47312;
+  outline: none;
+}
+
 .main-nav-btns {
   align-items: center;
 }
@@ -160,6 +216,26 @@ h1, h2, h3, p, ul, li, figure {
   background-color: #fff;
   font-size: 16px;
   line-height: 100%;
+  cursor: pointer;
+}
+
+.btn:focus {
+  background-color: #CC9933;
+  outline: none;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #CC9933;
+  outline: none;
+  color: #fff;
+}
+
+.btn:active {
+  background-color: #A47312;
+  outline: none;
+  color: #fff;
+  border-color: #A47312;
 }
 
 .main-nav-btn:not(:last-child) {
@@ -194,12 +270,14 @@ h1, h2, h3, p, ul, li, figure {
 }
 
 .offers-item {
+  position: relative;
   width: 573px;
   min-height: 258px;
   padding: 40px 0 0 45px;
   border-radius: 15px;
   list-style: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .offers-item-title {
@@ -230,7 +308,7 @@ h1, h2, h3, p, ul, li, figure {
 }
 
 .offers-item-link-more {
-  padding-right: 20px;
+  padding-right: 15px;
   background-image: url('../img/offers-item-link-more.svg');
   background-position: right center;
   background-repeat: no-repeat;
@@ -239,9 +317,40 @@ h1, h2, h3, p, ul, li, figure {
   color: #F0BF5F;
 }
 
+.offers-item-link-more:focus {
+  outline: none;
+}
+
+.offers-item-link-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.offers-item-link-more:focus::after {
+  outline: 1px solid #CC9933;
+  outline-offset: 8px;
+}
+
+.offers-item-link-more:active::after {
+  outline: none;
+}
+
+.offers-item-link-more:hover {
+  padding-right: 25px;
+}
+
+.offers-item-link-more:active {
+  color: #fff;
+  padding-right: 15px;
+}
+
 .offers-item-1 {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/offers-1.jpg);
-
 }
 
 .offers-item-2 {
@@ -270,6 +379,7 @@ h1, h2, h3, p, ul, li, figure {
 }
 
 .services-item {
+  position: relative;
   width: 573px;
   min-height: 330px;
   padding: 191px 126px 35px 45px;
@@ -295,15 +405,67 @@ h1, h2, h3, p, ul, li, figure {
   background-image: url('../img/services-4.jpg');
 }
 
+.services-item-title {
+  align-items: center;
+  gap: 7px;
+}
+
+.services-item-title svg {
+  stroke: #CC9933;
+}
+
 .services-item-title-link {
-  padding-right: 20px;
   font-size: 20px;
   color: #CC9933;
   font-weight: 500;
   line-height: 40px;
-  background-image: url('../img/services-item-title-link.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
+}
+
+.services-item-title-link:focus {
+  outline: none;
+}
+
+.services-item-title-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.services-item-title-link:focus::after {
+  outline: 1px solid #CC9933;
+  outline-offset: 8px;
+}
+
+.services-item-title-link:active::after {
+  outline: none;
+}
+
+.services-item-title-link:hover {
+  color: #F0BF5F;
+}
+
+.services-item-title:hover {
+  gap: 15px;
+}
+
+.services-item-title:hover svg {
+  stroke: #F0BF5F;
+}
+
+.services-item-title-link:active {
+  color: #A47312;
+}
+
+.services-item-title:active {
+  gap: 7px;
+}
+
+.services-item-title:active svg {
+  stroke: #A47312;
 }
 
 /* benefits */
@@ -409,21 +571,65 @@ h1, h2, h3, p, ul, li, figure {
 }
 
 .accomodation-more {
-  padding: 27px 0 27px 54px;
+  position: relative;
+  padding: 27px;
   align-items: flex-end;
+  justify-content: center;
   background-image: url('../img/accomodation-9.jpg');
   background-repeat: no-repeat;
 }
 
+.accomodation-more-box {
+  align-items: center;
+  gap: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.accomodation-more-box:hover {
+  background-color: #fff;
+}
+
+.accomodation-more-box svg {
+  stroke: #fff;
+}
+
+.accomodation-more-box:hover svg {
+  stroke: #CC9933;
+}
+
+.accomodation-more-box:active svg {
+  stroke: #A47312;
+}
+
 .accomodation-item-more-link {
-  padding-right: 20px;
-  background-image: url('../img/accomodation-item-link.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
   font-size: 20px;
   line-height: 200%;
   font-weight: 500;
   color: #fff;
+}
+
+.accomodation-item-more-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.accomodation-item-more-link:hover {
+  color: #CC9933;
+}
+
+.accomodation-item-more-link:focus {
+  outline: none;
+}
+
+.accomodation-item-more-link:active {
+  color: #A47312;
 }
 
 /* want-tour */
@@ -541,6 +747,20 @@ h1, h2, h3, p, ul, li, figure {
   color: #CC9933;
 }
 
+.contacts-link:focus {
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+}
+
+.contacts-link:hover {
+  color: #F0BF5F;
+}
+
+.contacts-link:active {
+  color: #A47312;
+  outline: none;
+}
+
 .contacts-email-desc {
   color: #999;
 }
@@ -585,14 +805,32 @@ h1, h2, h3, p, ul, li, figure {
 }
 
 .footer-link {
-  display: block;
+  display: inline-block;
+  width: fit-content;
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
 }
 
+.footer-link:focus {
+  outline: 1px solid #CC9933;
+}
+
+.footer-link:hover {
+  color: #F0BF5F;
+}
+
+.footer-link:active {
+  color: #A47312;
+  outline: none;
+}
+
 .footer-middle {
   width: 359px;
+}
+
+.footer-mid-p {
+  flex-direction: column;
 }
 
 .footer-mid-p:not(:last-child) {
@@ -619,23 +857,50 @@ h1, h2, h3, p, ul, li, figure {
   height: 25px;
 }
 
-.social-link-tripad {
-  background-image: url(../img/footer-tripadv.svg);
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-  background-position: center;
+.social-link-tripad svg {
+  fill: #999;
 }
 
-.social-link-ok {
-  background-image: url(../img/footer-ok.svg);
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-  background-position: center;
+.social-link-tripad:focus, .social-link-tripad:active {
+  outline: none;
 }
 
-.social-link-vk {
-  background-image: url(../img/footer-vk.svg);
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-  background-position: center;
+.social-link-tripad:focus svg, .social-link-tripad:hover svg {
+  fill: #CC9933;
+}
+
+.social-link-tripad:active svg {
+  fill: #A47312;
+}
+
+.social-link-ok svg {
+  fill: #999;
+}
+
+.social-link-ok:focus, .social-link-ok:active {
+  outline: none;
+}
+
+.social-link-ok:focus svg, .social-link-ok:hover svg {
+  fill: #CC9933;
+}
+
+.social-link-ok:active svg {
+  fill: #A47312;
+}
+
+.social-link-vk svg {
+  fill: #999;
+}
+
+.social-link-vk:focus, .social-link-vk:active {
+  outline: none;
+}
+
+.social-link-vk:focus svg, .social-link-vk:hover svg {
+  fill: #CC9933;
+}
+
+.social-link-vk:active svg {
+  fill: #A47312;
 }
